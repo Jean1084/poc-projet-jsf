@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.umanis.jean.poc-jsf</groupId>
+	<artifactId>poc-projet-jsf</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>poc-projet-jsf</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- JSF -->
+		<jsf-impl.version>2.2.17</jsf-impl.version>
+		<jsf-api.version>2.2.17</jsf-api.version>
+		<!-- Javax.Servlet API -->
+		<javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+		<!-- PrimeFaces -->
+		<primefaces.version>6.0</primefaces.version>
+		<!-- Spring Web MVC -->
+		<spring-webmvc.version>5.0.6.RELEASE</spring-webmvc.version>
+		<!-- H2 Database -->
+		<h2database.version>1.4.197</h2database.version>
+		<!-- Test NG -->
+		<testng.version>6.13.1</testng.version>
+		<!-- Lombok -->
+		<lombok.version>1.16.20</lombok.version>
+	</properties>
+
+	<dependencies>
+		<!-- JSF -->
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>${jsf-impl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>${jsf-api.version}</version>
+		</dependency>
+		<!-- Javax.Servlet API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${javax.servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- PrimeFaces -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>${primefaces.version}</version>
+		</dependency>
+		<!-- Spring Web MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-webmvc.version}</version>
+		</dependency>
+		<!-- H2 Database -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2database.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Test NG -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,5 @@
+package com.umanis.jean.poc_jsf.poc_projet_jsf.converter;
+
+public class PersonneConverter {
+
+}
